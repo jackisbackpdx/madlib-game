@@ -1,0 +1,20 @@
+input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+body {
+    background-color: steelblue; 
+    border: 10px solid grey;
+    margin: 0;
+}
+html {
+    border: 10px solid grey;
+}
