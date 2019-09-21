@@ -1,4 +1,3 @@
-
 function makeMadLib() {
     let adjective = document.getElementById('adjective');
     let noun = document.getElementById('noun');
@@ -17,14 +16,15 @@ function makeMadLib() {
     let word2 = document.getElementById('word2');
     let word3 = document.getElementById('word3');
     let word4 = document.getElementById('word4');
-    const word5 = document.getElementById('word5');
-    const word6 = document.getElementById('word6');
-    const word7 = document.getElementById('word7');
-    const word8 = document.getElementById('word8');
-    const word9 = document.getElementById('word9');
-    const word10 = document.getElementById('word10');
-    const word11 = document.getElementById('word11');
-    const word12 = document.getElementById('word12');
+    let word5 = document.getElementById('word5');
+    let word6 = document.getElementById('word6');
+    let word7 = document.getElementById('word7');
+    let word8 = document.getElementById('word8');
+    let word9 = document.getElementById('word9');
+    let word10 = document.getElementById('word10');
+    let word11 = document.getElementById('word11');
+    let word12 = document.getElementById('word12');
+
     word1.textContent = adjective.value;
     word2.textContent = noun.value;
     word3.textContent = verbPastTense.value;
@@ -37,4 +37,6 @@ function makeMadLib() {
     word10.textContent = adverb2.value;
     word11.textContent = verbPastTense2.value;
     word12.textContent = adjective4.value;
+
 }
+
