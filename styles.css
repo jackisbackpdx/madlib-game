@@ -85,12 +85,15 @@ img {
 }
 #get-p {
     width: 400px;
+    padding: 5px;
 }
 #button1 {
+    margin-top: 10px;
     margin-right: 25%;
     width: 100px;
 }
 #button2 {
+    margin-top: 10px;
     margin-left: 25%;
     width: 100px
 }
