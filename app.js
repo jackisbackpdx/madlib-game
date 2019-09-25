@@ -4,7 +4,7 @@ function makeMadLib() {
     const inputs = document.querySelectorAll('input');
     const spans = document.querySelectorAll('span');
     for(let i = 0; i < inputs.length; i++) {
-        spans[i].textContent = inputs[i].value
+        spans[i].textContent = inputs[i].value;
         spans[i].style.color = colorGenerator();
     }
 
