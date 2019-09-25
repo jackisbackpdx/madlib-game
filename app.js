@@ -1,4 +1,6 @@
 function makeMadLib() {
+
+    
     const inputs = document.querySelectorAll('input');
     const spans = document.querySelectorAll('span');
     for(let i = 0; i < inputs.length; i++) {

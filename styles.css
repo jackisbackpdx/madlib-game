@@ -62,7 +62,7 @@ img {
     position: absolute;
     height: 80%;
     width: 90%;
-    background-image: url('../images/zoo image.jpg');
+    background-image: url('https://i.imgur.com/ugVHSDi.jpg');
     z-index: -1;
     margin-top: 20%;
     justify-content: center;
