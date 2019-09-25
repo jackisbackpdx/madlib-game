@@ -5,61 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-        <script src="app.js"></script>
-    <label>
-        Adjective: <input id="adjective">
-    </label>
-    <label>
-        Noun: <input id="noun">
-    </label>
-    <label>
-        verb past-tense: <input id="verb past-tense">
-    </label>
-    <label>
-        Adverb: <input id='adverb'>
-    </label>
-    <label>
-        Adjective: <input id='adjective2'>
-    </label>
-    <label>
-        Noun: <input id='noun2'>
-    </label>
-    <label>
-        Noun: <input id='noun3'>
-    </label>
-    <label>
-        Adjective:<input id='adjective3'>
-    </label>
-    <label>
-        Verb: <input id='verb'>
-    </label>
-    <label>
-        Adverb: <input id='adverb2'>
-    </label>
-    <label>
-        Verb Past-tense<input id='verb past tense2'>
-    </label>
-    <label>
-        Adjective: <input id='adjective4'>
-    </label>
 
-    <button onClick='makeMadLib()'>Make Madlib</button>
- 
-    <p id="output">Today I went to the zoo. I saw a <span id="word1"></span>
-        <span id='word2'></span> jumping up and down in its tree. He
-        <span id='word3'></span> <span id="word4"></span> through
-        the large tunnel that led to its <span id="word5"></span>
-        <span id="word6"></span>. I got some peanuts and passed them
-        through the cage to a gigantic gray <span id="word7"></span>
-        towering above my head. Feeding that animal made me
-        hungry. I went to get a <span id="word8"></span> scoop of ice
-        cream. It filled my stomach. Afterwards I had to
-        <span id='word9'></span> <span id='word10'></span> to catch our bus. When
-        I got home I <span id='word11'></span> my mom for a
-        <span id='word12'></span> day at the zoo. </p>
-        <div></div>
+<body class='prev-page' id='update-page'>
+    <div id='zoo-img'>
+        <p class='hidden' id='get-p'>Today I went to the zoo. I saw a <span id="word1"></span>
+            <span id='word2'></span> jumping up and down in its tree. He
+            <span id='word3'></span> <span id="word4"></span> through
+            the large tunnel that led to its <span id="word5"></span>
+            <span id="word6"></span>. I got some peanuts and passed them
+            through the cage to a gigantic gray <span id="word7"></span>
+            towering above my head. Feeding that animal made me
+            hungry. I went to get a <span id="word8"></span> scoop of ice
+            cream. It filled my stomach. Afterwards I had to
+            <span id='word9'></span> <span id='word10'></span> to catch our bus. When
+            I got home I <span id='word11'></span> my mom for a
+            <span id='word12'></span> day at the zoo. </p>
+    </div>
+    <img src='../images/Nf0NDwti.gif'/>
+    <div id='banner'>
+        <button id='button1' onClick='makeMadLib()'>Make Madlib</button>
+        <button id='button2' onClick='clearFunction()'>Clear</button>
+    </div>
+    
+        <div id='form'>
+            <script src="app.js"></script>
+        <label>
+            Adjective: <input id="adjective">
+        </label>
+        <label>
+            Noun: <input id="noun">
+        </label>
+        <label>
+            verb past-tense: <input id="verb past-tense">
+        </label>
+        <label>
+            Adverb: <input id='adverb'>
+        </label>
+        <label>
+            Adjective: <input id='adjective2'>
+        </label>
+        <label>
+            Noun: <input id='noun2'>
+        </label>
+        <label>
+            Noun: <input id='noun3'>
+        </label>
+        <label>
+            Adjective:<input id='adjective3'>
+        </label>
+        <label>
+            Verb: <input id='verb'>
+        </label>
+        <label>
+            Adverb: <input id='adverb2'>
+        </label>
+        <label>
+            Verb Past-tense<input id='verb past tense2'>
+        </label>
+        <label>
+            Adjective: <input id='adjective4'>
+        </label>
+        </div>
+
+
 </body>
 </html>

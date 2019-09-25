@@ -1,41 +1,101 @@
 input {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    border: none;
-    border-bottom: 2px solid red;
+    text-align: center;
+    border-radius: 10%;
 }
 label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+}
+.prev-page {
+    background-color: firebrick; 
+    font-family: 'Josefin Slab', serif;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration: underline;
-    width: 40%;
-
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7%;
 }
-body {
-    background-color: yellowgreen; 
-    border: 10px solid grey;
-    margin: 0;
-    position: relative;
-}
-p {
-    position: absolute;
-    padding-top: 0px;
-    margin-top: -450px;
-    margin-left: 60%;
-    width: 200px;
-    height: auto;
-
-}
-html {
-    border: 10px solid grey;
-}
-div {
-    height: 10px;
-    width: 10px;   
+button:hover {
+    background-color: indianred;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    cursor: pointer;
 }
 button {
-    margin: 0 auto;
+    height: 3rem;
+    margin: 5px;
+    font-weight: bold;
+    outline: none;
+    background-color: gold;
+}
+.hidden {
+    display: none;
+}
+.displayed {
+    background-color: beige;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 30%;
+}
+.new-page {
+        background-color: orange; 
+        font-family: 'Josefin Slab', serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 7%;
+}
+img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 65px;   
+}
+#zoo-img {
+    display: none;
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    background-image: url('../images/zoo image.jpg');
+    z-index: -1;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+#form {
+    display: initial;
+    margin-top: 3%;
+}
+#get-p {
+    width: 400px;
+}
+#button1 {
+    margin-right: 25%;
+    width: 100px;
+}
+#button2 {
+    margin-left: 25%;
+    width: 100px
+}
+span {
+    color: red;
+    font-weight: 900;
+    font-size: 1rem;
 }

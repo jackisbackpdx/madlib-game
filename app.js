@@ -1,42 +1,58 @@
 function makeMadLib() {
-    let adjective = document.getElementById('adjective');
-    let noun = document.getElementById('noun');
-    let verbPastTense = document.getElementById('verb past-tense');
-    let adverb = document.getElementById('adverb');
-    let adjective2 = document.getElementById('adjective2');
-    let noun2 = document.getElementById('noun2');
-    let noun3 = document.getElementById('noun3');
-    let adjective3 = document.getElementById('adjective3');
-    let verb = document.getElementById('verb');
-    let adverb2 = document.getElementById('adverb2');
-    let verbPastTense2 = document.getElementById('verb past tense2');
-    let adjective4 = document.getElementById('adjective4');
+    const inputs = document.querySelectorAll('input');
+    const spans = document.querySelectorAll('span');
+    for(let i = 0; i < inputs.length; i++) {
+        spans[i].textContent = inputs[i].value.toUpperCase();
+        spans[i].style.color = colorGenerator();
+    }
 
-    let word1 = document.getElementById('word1');
-    let word2 = document.getElementById('word2');
-    let word3 = document.getElementById('word3');
-    let word4 = document.getElementById('word4');
-    let word5 = document.getElementById('word5');
-    let word6 = document.getElementById('word6');
-    let word7 = document.getElementById('word7');
-    let word8 = document.getElementById('word8');
-    let word9 = document.getElementById('word9');
-    let word10 = document.getElementById('word10');
-    let word11 = document.getElementById('word11');
-    let word12 = document.getElementById('word12');
+    const hidden = document.getElementById('get-p');
+    hidden.classList.remove('hidden');
+    hidden.classList.add('displayed');
 
-    word1.textContent = adjective.value;
-    word2.textContent = noun.value;
-    word3.textContent = verbPastTense.value;
-    word4.textContent = adverb.value;
-    word5.textContent = adjective2.value;
-    word6.textContent = noun2.value;
-    word7.textContent = noun3.value;
-    word8.textContent = adjective3.value;
-    word9.textContent = verb.value;
-    word10.textContent = adverb2.value;
-    word11.textContent = verbPastTense2.value;
-    word12.textContent = adjective4.value;
+    const bodyStyles = document.getElementById('update-page');
+    bodyStyles.classList.remove('prev-page');
+    bodyStyles.classList.add('new-page');
 
+    console.log('make madlib was clicked');
+
+    document.getElementById('zoo-img').style.display = 'flex';
+
+    const labels = document.querySelectorAll('label');
+    for(let i = 0; i < labels.length; i++) {
+        labels[i].style.color = 'white';
+    }
+    
+    document.getElementById('form').style.display = 'none';
+    
 }
 
+function clearFunction() {
+    const newPara = document.getElementById('get-p');
+    newPara.classList.remove('displayed');
+    newPara.classList.add('hidden');
+    
+    const newBody = document.getElementById('update-page');
+    newBody.classList.remove('new-page');
+    newBody.classList.add('prev-page');
+    console.log('clear was clicked');
+    document.getElementById('zoo-img').style.display = 'none';
+    document.getElementById('form').style.display = 'initial';
+    
+    const labelColor = document.querySelectorAll('label');
+    for(let i = 0; i < labelColor.length; i++) {
+        labelColor[i].style.color = 'black';
+    }
+}
+
+function colorGenerator() {
+    let colors = [];
+    for(let i = 0; i < 3; i ++) {
+        const randNumber = Math.floor(Math.random() * (255));
+        colors.push(randNumber);
+    }
+    
+    const color = 'rgb(' + colors[0] + ', ' + colors[1] + ', ' + colors[2] + ')';
+    console.log(color);
+    return color;
+}
