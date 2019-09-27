@@ -31,6 +31,7 @@ button {
     font-weight: bold;
     outline: none;
     background-color: gold;
+    margin: 10px;
 }
 .hidden {
     display: none;
@@ -62,7 +63,7 @@ img {
     display: none;
     height: 80%;
     width: 90%;
-    background-image: url('./image/zoo image.jpg');
+    background-image: url('https://i.imgur.com/ugVHSDi.jpg');
     z-index: -1;
     justify-content: center;
     align-items: center;
