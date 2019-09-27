@@ -15,7 +15,7 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 7%;
+    height: 100%;
 }
 button:hover {
     background-color: indianred;
@@ -40,6 +40,7 @@ button {
     font-weight: bold;
     font-size: 1.5rem;
     width: 30%;
+    height: 100%;
 }
 .new-page {
         background-color: orange; 
@@ -49,7 +50,7 @@ button {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 7%;
+        height: 100%;
 }
 img {
     position: absolute;
@@ -59,12 +60,10 @@ img {
 }
 #zoo-img {
     display: none;
-    position: absolute;
     height: 80%;
     width: 90%;
-    background-image: url('https://i.imgur.com/ugVHSDi.jpg');
+    background-image: url('./image/zoo image.jpg');
     z-index: -1;
-    margin-top: 20%;
     justify-content: center;
     align-items: center;
 }
@@ -85,15 +84,13 @@ img {
 }
 #get-p {
     width: 400px;
-    padding: 5px;
+    height: auto;
 }
 #button1 {
-    margin-top: 10px;
     margin-right: 25%;
     width: 100px;
 }
 #button2 {
-    margin-top: 10px;
     margin-left: 25%;
     width: 100px
 }
@@ -101,4 +98,11 @@ span {
     color: red;
     font-weight: 900;
     font-size: 1.5rem;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
 }
