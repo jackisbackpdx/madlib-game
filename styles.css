@@ -17,12 +17,19 @@ label {
     align-items: center;
     height: 100%;
 }
-button:hover {
+#button1:hover {
     background-color: indianred;
     transition-timing-function: ease;
     transition-duration: 500ms;
-    margin-bottom: 7px;
     margin-left: 7px;
+    cursor: pointer;
+
+}
+#button2:hover {
+    background-color: indianred;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+    margin-right: 7px;
     cursor: pointer;
 }
 button {
